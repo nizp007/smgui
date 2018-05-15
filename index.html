@@ -10,14 +10,28 @@
     width:100px;
     height: 100px;
     background:skyblue;
-    position: relative;
+    position: absolute;
     top:0;
-    left:10px;
+    left:0;
     
 }
 </style>
 </head>
 <body>
     <div id="box"></div>
+<script>
+
+    let box = document.getElementById('box');
+
+    box.addEventListener('mousedown',function(){
+
+        document.addEventListener('mousemove',move);
+        
+        document.addEventListener('mouseup',up);
+    });
+
+
+
+</script>
 </body>
 </html>
